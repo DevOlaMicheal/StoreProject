@@ -2,7 +2,7 @@ import express from "express"
 import { connectDb } from "./db/db.js"
 import * as dotenv from "dotenv"
 import productRoutes from './routes/productRoutes.js'
-import { notFound,  } from "./middlewares/errorHandler.js"
+import { notFound, errorHandler } from "./middlewares/errorHandler.js"
 
 dotenv.config()
 const app = express()
